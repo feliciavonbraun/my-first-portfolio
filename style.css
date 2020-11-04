@@ -1,0 +1,41 @@
+/* html { 
+    height: 100%;
+    margin: 0;
+} */
+body {
+    margin: 0; 
+    background: blue;
+}
+
+/* HEADER */
+header {
+    background: chocolate;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3rem;
+    position: fixed;
+}
+nav {
+    background: orange;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MAIN */
+main {
+    background: darkmagenta;
+    margin-top: 3rem;
+}
+
+.presentation {
+    background: black;
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
