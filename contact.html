@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="" style="height: 100%;">
+            <i class="material-icons">menu</i> 
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="/onSubmit.php" method="">
+                <h1>CONTACT ME</h1>
+
+                <label for="first-name">Förnamn</label>
+                <input type="text" name="first-name" id="first-name">
+                <br>
+
+                <label for="last-name">Efternamn</label>
+                <input type="text" name="last-name" >
+                <br>
+
+                <label for="email">E-postadress</label>
+                <input type="email" name="email" id="email" pattern=".+@globex.com" required>
+                <br>
+
+                <button class="blue-button" type="submit"> SKAPA KONTO </button>
+            </form>
+
+            <div class="or">
+                <span></span>
+                <span>ELLER</span>
+                <span></span>
+            </div>
+
+            <button class="white-button">
+                <a href="index.html">LOGGA IN</a>
+            </button>
+
+
+            
+
+            <form action="/onSubmit.php">
+                <h2 style="margin-bottom: 0;">Kontakta oss</h2>
+                <div style="font-size: small; text-align: center;">på telefonnr 0320-63203<br>
+                eller skriv ett meddelande nedan:</div><br>
+    
+                <label for="text">Förnamn:</label>
+                <input class="form-inputs" type="text" required>
+                </br>
+                <label for="text">Efternamn:</label>
+                <input class="form-inputs" type="text" required>
+                </br>
+                <label for="email">E-postadress:</label>
+                <input class="form-inputs" type="email" id="email" required>
+                </br>
+                <label for="text">Meddelande:</label>
+                <textarea class="form-inputs message" name="text" id="" cols="1" rows="1" required></textarea>
+                </br>
+                <button class="form-inputs" type="submit">Skicka in</button>
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+</html>

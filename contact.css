@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background: orange;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    /* Fixera header så den fastnar när main når högst upp */
+    position: sticky;
+    top: 0;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: rgb(238, 230, 230);
+    width: 15rem;
+    height: 1.8rem;
+    border-radius: 1000px;
+    border: none;
+}
+
+.blue-button {
+    background: blue;
+    color: white;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1000px;  
+    border: none;   
+}
+
+.white-button {
+    background: white;
+    color: black;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1000px;  
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+span {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: .7;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.form-inputs {
+    height: 2rem;
+    width: 13rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.message {
+    height: 8rem;
+}
+
+button {
+    color: white;
+    background: rgb(50, 73, 28);
+    font-size: 1rem;
+}

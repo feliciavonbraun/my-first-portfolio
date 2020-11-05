@@ -1,41 +1,42 @@
-/* html { 
-    height: 100%;
-    margin: 0;
-} */
 body {
-    margin: 0; 
-    background: blue;
+    margin: 0;
 }
 
 /* HEADER */
 header {
-    background: chocolate;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 3rem;
-    position: fixed;
 }
+
+.presentation {
+    background: black;
+    color: hotpink;
+    display: flex; /* varflr behöver denna va där även om jag har en klass för det? center slutar fungera*/
+    height: 100vh; /* är det ok att använda vh??? */ 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* MAIN */
+
+
 nav {
     background: orange;
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1rem;
+    /* Fixera header så den fastnar när main når högst upp */
+    position: sticky;
+    top: 0;
+
 }
 
-/* MAIN */
-main {
-    background: darkmagenta;
-    margin-top: 3rem;
-}
-
-.presentation {
-    background: black;
-    color: white;
+/* REUSABLE CLASSES */ 
+.flex {
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
