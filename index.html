@@ -10,28 +10,39 @@
 </head>
 <body>
     <header>
-        <div class="presentation">
-            <div class="flex">
+        <div class="presentation flex">
+            <nav class="displayed-nav flex">
                 <h1>Hi im felicia</h1>
-                <img src="/temporary(kopia).jpg" alt="" style="height: 4rem;">
-            </div>
-            <div>
-                <!-- länka till h2 där nere för att den ska flyga dit?? -->
-                <a>Projects</a>
-                <a>About</a>
+
+                <a href="#project">Projects</a>
+                <a href="#about">About</a>
                 <a href="contact.html"> Contact</a>
+            </nav>
+            <div class="flex pictureOfMe">
+                <img class="pictureOfMe" src="/temporary(kopia).jpg" alt="">
             </div>
         </div>
     </header>
     
     
     <main>
-        <div>
-            <nav>
-                <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="" style="height: 100%;">
-                <i class="material-icons">menu</i> 
-            </nav>
-            
+        <nav class="burger-nav">
+            <div class="top-nav">
+                <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="Logo" style="height: 100%;">
+                <i id="menu" class="material-icons">menu</i> 
+            </div>
+            <div>
+                <h4>Home</h4>
+                <h4>Projects</h4>
+                <h4>About</h4>
+                <h4>Contact</h4>
+            </div>
+        </nav>
+
+
+
+
+        <div id="about" class="flex">
             <h2>About</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
@@ -47,21 +58,31 @@
             </p>
         </div>
 
-        <div>
+        <div id="project" class="flex" >
             <h2>Projects</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
-            </p>
+            <div class="flex" style="background: magenta;">
+                <img class="computerPicture" src="apple-macbook-pro-med-touch-bar-2020-core-i5-8gb-256gb-ssd-133.jpg" alt="">
+                <h3>Swedbank</h3>
+            </div>
+            <div class="flex" style="background: red;">
+                <img class="computerPicture" src="apple-macbook-pro-med-touch-bar-2020-core-i5-8gb-256gb-ssd-133.jpg" alt="">
+                <h3> Gångemad</h3>
+            </div>
+            <div class="flex" style="background: darkblue;">
+                <img class="computerPicture" src="apple-macbook-pro-med-touch-bar-2020-core-i5-8gb-256gb-ssd-133.jpg" alt="">
+                <h3> JavaScript Game</h3>
+            </div>
+           
         </div>
+
+
+
+        <div id="slideshow-container">
+            <img class="show" src="apple-macbook-pro-med-touch-bar-2020-core-i5-8gb-256gb-ssd-133.jpg" alt="">
+            <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="">
+            <img src="temporary(kopia).jpg" alt="">
+        </div>
+
     </main>
     
 </body>

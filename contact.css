@@ -1,74 +1,96 @@
 body {
     margin: 0;
+    background: black;
+    color: white;
 }
 
-nav {
-    background: orange;
+/* HEADER ELEMENTS*/
+header {
+    background: mediumorchid;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 3rem;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* Gör att musen blir en pekare på menyn */
+header i {
+    cursor: pointer;
+}
+
+.top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
-    /* Fixera header så den fastnar när main når högst upp */
-    position: sticky;
-    top: 0;
-
+    height: 3rem;
 }
 
+nav {
+    background: rgb(190, 179, 171);
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+
+/* MAIN ELEMENTS */
 main {
-    display: flex;
+    height: 100vh;
+    margin-top: 3rem;
     flex-direction: column;
     justify-content: center;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
+/* .contactDetails {
+    line-height: 45px;
+    row-gap: 10rem; FUNKAR EJ
+} */
 
-form {
-    display: flex;
-    flex-direction: column;
+h1 {
+    padding: 1rem;
 }
 
-input {
+.contactDetails > a:link {
+    text-decoration: none;
+    color: white;
+}
+   
+.contactDetails > a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.contactDetails a:hover {
+    text-decoration: none;
+    color: rgb(135, 220, 231);
+}
+
+.contactDetails > :first-child {
+    padding: 0 5rem;
+}
+
+.contactDetails > :nth-child(3) {
+    padding: 0 5rem;
+}
+
+/* RESUABLE CLASSES */
+
+.flex {
+    display: flex;
+}
+
+
+
+/* CSS to form I will be using once I know how it works */
+/* input {
     background: rgb(238, 230, 230);
     width: 15rem;
     height: 1.8rem;
     border-radius: 1000px;
     border: none;
 }
-
-.blue-button {
-    background: blue;
-    color: white;
-    width: 15rem;
-    height: 2rem;
-    border-radius: 1000px;  
-    border: none;   
-}
-
-.white-button {
-    background: white;
-    color: black;
-    width: 15rem;
-    height: 2rem;
-    border-radius: 1000px;  
-}
-
-.or {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-}
-
-span {
-    margin: 0.3rem;
-    font-size: 0.8rem;
-}
-
 
 form {
     display: flex;
@@ -93,4 +115,4 @@ button {
     color: white;
     background: rgb(50, 73, 28);
     font-size: 1rem;
-}
+} */

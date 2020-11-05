@@ -1,9 +1,12 @@
 body {
     margin: 0;
+    background: black;
+    color: white;
 }
 
-/* HEADER */
+/* HEADER ELEMENTS*/
 header {
+    background: rgb(229, 200, 230);
     top: 0;
     left: 0;
     right: 0;
@@ -11,30 +14,121 @@ header {
 }
 
 .presentation {
-    background: black;
     color: hotpink;
     display: flex; /* varflr behöver denna va där även om jag har en klass för det? center slutar fungera*/
     height: 100vh; /* är det ok att använda vh??? */ 
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-/* MAIN */
+.pictureOfMe {
+    /* position: absolute;  */
+    visibility: visible; 
+    left: 25%; 
+    top: 18%; 
+    width: 60%; 
+    bottom: 0;
+}
+
+.displayed-nav {
+    background: firebrick;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 100;
+    font-size: 2rem;
+}
+
+.displayed-nav > a:link {
+    text-decoration: none;
+    color: white;
+}
+   
+.displayed-nav > a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.displayed-nav > a:hover {
+    text-decoration: none;
+    color: rgb(50, 73, 28);
+}
+
+/* MAIN ELEMENTS*/
+main {
+}
 
 
-nav {
-    background: orange;
+
+.computerPicture {
+    width: 30%;
+}
+
+/* NAVIGATION BAR ELEMENTS */
+.burger-nav {
+    background: rgb(240, 233, 220);
     height: 3rem;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0; 
+    overflow: hidden;
+}
+
+.top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
-    /* Fixera header så den fastnar när main når högst upp */
-    position: sticky;
-    top: 0;
+    height: 3rem;
+    
+}
+
+main i {
+    cursor: pointer;
+}
+
+#about {
+    background: salmon;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
+
+#project {
+    /* padding: 1rem; */
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* SLIDESHOW ELEMENTS */
+
+#slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#slideshow-container > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    object-fit: cover;
+    object-position: center;
+}
+
+#slideshow-container .show {
+    opacity: 1;
+}
+
+
 
 /* REUSABLE CLASSES */ 
 .flex {

@@ -11,64 +11,50 @@
 <body>
     <header>
         <nav>
-            <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="" style="height: 100%;">
-            <i class="material-icons">menu</i> 
+            <div class="top-nav">
+                <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="Logo" style="height: 100%;">
+                <i id="menu" class="material-icons">menu</i> 
+            </div>
+            <div>
+                <a href="index.html"><h4>Home</h4></a>
+                <a href="#project"><h4>Projects</h4></a>
+                <h4>About</h4>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <form action="/onSubmit.php" method="">
-                <h1>CONTACT ME</h1>
+    <main class="flex">
+        <h1>CONTACT ME</h1>
+        <div class="contactDetails flex">
+            <a href="https://www.linkedin.com/in/felicia-von-braun-wallin-1b238b1b5/"><h2>LinkedIn</h2></a>
+            <a href="mailto:feliciavonbraun@hotmail.com?subject=Front End Developer"><h2>Mail</h2></a>
+            <a href="https://github.com/feliciavonbraun"><h2>GitHub</h2></a>
+        </div>
+        
+        
+        
 
-                <label for="first-name">Förnamn</label>
-                <input type="text" name="first-name" id="first-name">
-                <br>
-
-                <label for="last-name">Efternamn</label>
-                <input type="text" name="last-name" >
-                <br>
-
-                <label for="email">E-postadress</label>
-                <input type="email" name="email" id="email" pattern=".+@globex.com" required>
-                <br>
-
-                <button class="blue-button" type="submit"> SKAPA KONTO </button>
-            </form>
-
-            <div class="or">
-                <span></span>
-                <span>ELLER</span>
-                <span></span>
-            </div>
-
-            <button class="white-button">
-                <a href="index.html">LOGGA IN</a>
-            </button>
-
-
-            
-
+        <!-- This form will be used once I learn how it works -->
+        <!-- <div class="container">
             <form action="/onSubmit.php">
-                <h2 style="margin-bottom: 0;">Kontakta oss</h2>
-                <div style="font-size: small; text-align: center;">på telefonnr 0320-63203<br>
-                eller skriv ett meddelande nedan:</div><br>
+                <h2 style="margin-bottom: 0;">Contact me</h2>
+                <div style="font-size: small; text-align: center;"></div><br>
     
-                <label for="text">Förnamn:</label>
-                <input class="form-inputs" type="text" required>
+                <label for="name">Name:</label>
+                <input class="form-inputs" type="text" name="name" id="name" required>
                 </br>
-                <label for="text">Efternamn:</label>
-                <input class="form-inputs" type="text" required>
+                <label for="subject">Subject:</label>
+                <input class="form-inputs" type="text" name="subject" id="subject" required>
                 </br>
-                <label for="email">E-postadress:</label>
-                <input class="form-inputs" type="email" id="email" required>
+                <label for="email">Emailaddress</label>
+                <input class="form-inputs" type="email" name="email" id="email" required>
                 </br>
-                <label for="text">Meddelande:</label>
-                <textarea class="form-inputs message" name="text" id="" cols="1" rows="1" required></textarea>
+                <label for="text">Message:</label>
+                <textarea class="form-inputs message" type="text" name="text" id="text" cols="1" rows="1" required></textarea>
                 </br>
                 <button class="form-inputs" type="submit">Skicka in</button>
             </form>
-        </div>
+        </div> -->
     </main>
 
 
