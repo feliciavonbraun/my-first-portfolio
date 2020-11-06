@@ -14,32 +14,35 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 100vh; /* är det ok att använda vh??? */ 
 }
 
 .presentation {
-    color: hotpink;
-    display: flex; /* varflr behöver denna va där även om jag har en klass för det? center slutar fungera*/
-    height: 100vh; /* är det ok att använda vh??? */ 
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    color: rgb(134, 91, 121);
+    height: 100vh; /* en av dess ska bort */
 }
 
 .pictureOfMe {
     position: absolute; 
     visibility: visible; 
     left: 25%; 
-    /* top: 18%;  */
     width: 70%; 
     bottom: 0;
 }
 
 .displayed-nav {
-    background: firebrick;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 0 0 10rem;
     font-size: 2rem;
+
+    /* text-align: center; */
+
     z-index: 100;
+}
+
+h1 {
+    font-size: 5rem;
+    /* padding: 0 5rem; */
 }
 
 .displayed-nav > a:link {
@@ -54,7 +57,7 @@ header {
 
 .displayed-nav > a:hover {
     text-decoration: none;
-    color: rgb(50, 73, 28);
+    color: rgb(134, 91, 121);
 }
 
 /* MAIN ELEMENTS*/
@@ -70,7 +73,7 @@ main {
 
 /* NAVIGATION BAR ELEMENTS */
 .burgerNav {
-    height: 3rem;
+    height: 4rem;
     padding: 0 1rem;
     position: sticky;
     top: 0; 
@@ -82,8 +85,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 3rem;
-
+    height: 4rem;
 }
 
 main i {
