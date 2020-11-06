@@ -1,13 +1,28 @@
+// Burger menu2 (on contact page)
 const header = document.querySelector('header');
-// const main = document.querySelector('main');
-const menuIcon = document.getElementById('menu');
+const menuIcon = document.getElementById('menu2');
 
 menuIcon.onclick = function() {
-    if (header.style.height == '100%') {
+    if (header.style.height == '40%') {
         header.style.height = null; 
     } else {
-        header.style.height = '100%';
+        header.style.height = '40%';
     }
+}
+
+
+//Burger menu1 (on homepage)
+const main = document.getElementsByClassName('burgerNav');
+const menuIcon1 = document.getElementById('menu1')
+
+// burger nav ska ökas inte header 
+
+menuIcon1.onclick = function() {
+    if (burgerNav.style.height == '100%') {
+         burgerNav.style.height = null;
+     } else {
+         burgerNav.style.height = '100%';
+     }
 }
 
 
@@ -16,8 +31,8 @@ menuIcon.onclick = function() {
 
 
 
-window.onload = changeActiveImage;
-// window.addEventListener('load', main);
+// window.onload = changeActiveImage;
+window.addEventListener('load', main);
 
 
 /** Start the animation with a set interval */
@@ -60,3 +75,4 @@ function changeActiveImage() {
         
     }
 }
+

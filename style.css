@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: black;
@@ -6,7 +9,7 @@ body {
 
 /* HEADER ELEMENTS*/
 header {
-    background: rgb(229, 200, 230);
+    /* background: rgb(229, 200, 230); */
     top: 0;
     left: 0;
     right: 0;
@@ -23,11 +26,11 @@ header {
 }
 
 .pictureOfMe {
-    /* position: absolute;  */
+    position: absolute; 
     visibility: visible; 
     left: 25%; 
-    top: 18%; 
-    width: 60%; 
+    /* top: 18%;  */
+    width: 70%; 
     bottom: 0;
 }
 
@@ -35,8 +38,8 @@ header {
     background: firebrick;
     flex-direction: column;
     padding: 1rem;
-    z-index: 100;
     font-size: 2rem;
+    z-index: 100;
 }
 
 .displayed-nav > a:link {
@@ -56,6 +59,7 @@ header {
 
 /* MAIN ELEMENTS*/
 main {
+    background: grey;
 }
 
 
@@ -65,21 +69,21 @@ main {
 }
 
 /* NAVIGATION BAR ELEMENTS */
-.burger-nav {
-    background: rgb(240, 233, 220);
+.burgerNav {
     height: 3rem;
     padding: 0 1rem;
     position: sticky;
     top: 0; 
     overflow: hidden;
+    z-index: 10000;
 }
 
-.top-nav {
+.topNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 3rem;
-    
+
 }
 
 main i {
@@ -92,16 +96,28 @@ main i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 #project {
     /* padding: 1rem; */
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
 }
 
+button {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    background: blueviolet;
+}
 
+button:hover {
+    text-decoration: none;
+    color: rgb(50, 73, 28);
+    background: blue;
+}
 
 
 /* SLIDESHOW ELEMENTS */
@@ -134,3 +150,9 @@ main i {
 .flex {
     display: flex;
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 

@@ -21,17 +21,20 @@ header i {
     cursor: pointer;
 }
 
-.top-nav {
-    display: flex;
+.topNav {
     align-items: center;
     justify-content: space-between;
     height: 3rem;
 }
 
-nav {
-    background: rgb(190, 179, 171);
+.burgerNav {
     height: 3rem;
     padding: 0 1rem;
+}
+
+h4 {
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 
