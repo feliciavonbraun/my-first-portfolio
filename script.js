@@ -1,19 +1,6 @@
-// Burger menu2 (on contact page) WORKING
-const header = document.querySelector('header');
-const menuIcon2 = document.getElementById('menu2');
-
-menuIcon2.onclick = function() {
-    if (header.style.height == '40%') {
-        header.style.height = null; 
-    } else {
-        header.style.height = '40%';
-    }
-}
-
-
-//Burger menu1 (on homepage)
-const burgerNav = document.getElementsByClassName('burgerNav');
-const menuIcon1 = document.getElementById('menu1')
+//Burger menu1 (on homepage WORKING)
+const burgerNav = document.getElementsByClassName('burgerNav')[0];
+const menuIcon1 = document.getElementById('menu1');
 
 // burger nav ska ökas inte header 
 
@@ -23,9 +10,9 @@ menuIcon1.onclick = function() {
     } else {
         burgerNav.style.height = '100%';
     }
-
-    console.log('test')
 }
+
+
 
 
 
