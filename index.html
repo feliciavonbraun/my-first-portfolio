@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Felicias Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="presentation flex">
-            <nav class="displayed-nav flex">
-                <h1>Felicia von Braun</h1>
+        <div class="headerPresentation flex">
+            <nav class="displayedNav flex">
+                <div>
+                    <h1>Felicia von Braun <sup class="myTitel">Front End Developer</sup></h1>
+                    <sup class="myTitel">Front End Developer</sup>	 </br>
+                </div>
                 <a href="#project">Projects</a> </br>
                 <a href="#about">About</a> </br>
                 <a href="contact.html"> Contact</a> </br>
@@ -27,10 +32,10 @@
     <main>
         <nav class="burgerNav">
             <div class="topNav">
-                <img src="kaffefff.png" alt="Logo" style="height: 100%;">
+                <img src="/images/logo.png" alt="Logo" style="height: 100%;">
                 <i id="menu1" class="material-icons">menu</i> 
             </div>
-            <div>
+            <div id="testingNav">
                 <a href="index.html"><h4>Home</h4></a>
                 <a href="#project"><h4>Projects</h4></a>
                 <a href="#about"><h4>About</a>
@@ -56,14 +61,19 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
             </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam sit, eveniet ea saepe dolorem beatae error voluptates. Natus incidunt vitae voluptas autem dolorem magnam voluptate a odit maiores quod.
+            </p>
         </div>
 
-        <div id="project" class="flex" >
+        <!-- <div id="project" class="flex" >
             <h2>Projects</h2>
+            
             <div class="flex center" style="background: magenta;">
                 <img class="computerPicture" src="swedbankl.png" alt="">
                 <h3>Swedbank</h3>
             </div>
+
             <div class="flex center" style="background: red;">
                 <img class="computerPicture" src="gangemadl.png" alt="">
                 <h3> Gångemad</h3>
@@ -74,15 +84,43 @@
                 <a href=""><h3> JavaScript Game</h3></a>
             </div>
            
+        </div> -->
+
+        <h2 class="center">Projects</h2>
+
+        <div id="project" class="center">
+
+            <div class="projectContainer">
+                <img class="computerPicture" src="/images/swedbankl.png" alt="">
+                <div class="middle">
+                    <a href="https://feliciavonbraun.github.io/swedbank-homepage/"><p class="projectTitle">Swedbank</p></a>
+                </div>
+            </div>
+            <div class="projectContainer">
+                <img class="computerPicture" src="/images/gangemadl.png" alt="">
+                <div class="middle">
+                    <a href=""><p class="projectTitle">Gångemad</p></a>
+                </div>
+            </div>
+            <div class="projectContainer">
+                <img class="computerPicture" src="/images/jsGame.png" alt="">
+                <div class="middle">
+                    <a href="https://feliciavonbraun.github.io/javascript-game/"><p class="projectTitle">JavaScript Game</p></a>
+                </div>
+            </div>
+            <div class="projectContainer">
+                <a href="https://feliciavonbraun.github.io/javascript-game/"><img class="computerPicture" src="/images/jsGame.png" alt=""></a>
+                <div class="middle">
+                    <p class="projectTitle">JavaScript Game</p>
+                </div>
+            </div>
         </div>
 
-
-
-        <div id="slideshow-container">
+        <!-- <div id="slideshow-container">
             <img class="show" src="apple-macbook-pro-med-touch-bar-2020-core-i5-8gb-256gb-ssd-133.jpg" alt="">
             <img src="d2a47bc6021db28067a973c9901d2b65.jpg" alt="">
             <img src="temporary(kopia).jpg" alt="">
-        </div>
+        </div> -->
 
     </main>
     

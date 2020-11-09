@@ -1,0 +1,10 @@
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .displayedNav {
+        font-size: 1.5rem;
+    }
+}
