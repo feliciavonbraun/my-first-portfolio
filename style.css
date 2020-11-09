@@ -15,7 +15,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100vh; /* är det ok att använda vh??? */ 
+    height: 100vh; /* vh kan medföra problem */ 
 }
 
 .headerPresentation {
@@ -34,9 +34,6 @@ header {
     flex-direction: column;
     padding: 0 0 0 10%;
     font-size: 2rem;
-
-    /* text-align: center; */
-
     z-index: 100;
 }
 
@@ -77,7 +74,6 @@ main {
 
 /* NAVIGATION BAR ELEMENTS */
 .burgerNav {
-    background: chartreuse;
     height: 4rem;
     padding: 0 1rem;
     position: sticky;
@@ -95,6 +91,12 @@ main {
 
 main i {
     cursor: pointer;
+}
+
+/* ABOUT SELECTION */
+#about {
+    background: rgb(134, 91, 121);
+    padding: 1rem;
 }
 
 /* PROJECT SECTION */
@@ -145,14 +147,6 @@ main i {
 }
 
 /* -------------- */
-#about {
-    background: salmon;
-    padding: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 button {
     padding: 1.5rem;
     border-radius: 10px;
