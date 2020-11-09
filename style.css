@@ -2,11 +2,10 @@ html {
     scroll-behavior: smooth;
     font-family: 'EB Garamond', serif;
 }
-
 body {
     margin: 0;
     background: black;
-    color: white;
+    color: white; /* BEHÖVS DENNA??*/
 }
 
 /* HEADER ELEMENTS*/
@@ -25,61 +24,67 @@ header {
 .pictureOfMe {
     position: absolute; 
     visibility: visible; 
+    bottom: 0;
     left: 25%; 
     width: 70%; 
-    bottom: 0;
 }
 
 .displayedNav {
     flex-direction: column;
     padding: 0 0 0 10%;
     font-size: 2rem;
-    z-index: 100;
+    z-index: 100; /* BEHÖVS DENNA???*/
 }
 
 h1 {
     color: rgb(134, 91, 121);
     font-size: 5rem;
     margin: 5rem 0 0 0;
-    display: flex;
     flex-direction: column;
-    border-spacing: 0;
+    /* border-spacing: 0; */
 }
+
 
 .myTitel {
     color: rgb(134, 91, 121);
     font-size: 1.2rem ;
     margin: 0;
+    line-height: 0;
 }
 
-.displayedNav > a:link {
+a:link {
     text-decoration: none;
     color: white;
 }
-   
-.displayedNav > a:visited {
+a:visited {
     text-decoration: none;
     color: white;
 }
-
+a:hover {
+    text-decoration: none;
+    color: black;
+}
 .displayedNav > a:hover {
     text-decoration: none;
     color: rgb(134, 91, 121);
 }
+
 
 /* MAIN ELEMENTS*/
 main {
     background: grey;
 }
 
+
+
 /* NAVIGATION BAR ELEMENTS */
 .burgerNav {
     height: 4rem;
-    padding: 0 1rem;
+    padding-right: 1rem;
     position: sticky;
     top: 0; 
     overflow: hidden;
-    z-index: 10000;
+    z-index: 10000; 
 }
 
 .topNav {
@@ -93,16 +98,25 @@ main i {
     cursor: pointer;
 }
 
-/* ABOUT SELECTION */
+h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* ABOUT SECTION */
 #about {
     background: rgb(134, 91, 121);
-    padding: 1rem;
+    padding: 1rem; /* DENNA BEHÖVS KANSKE INTE*/
 }
+
+
 
 /* PROJECT SECTION */
 #project {
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .projectContainer {
@@ -115,28 +129,20 @@ main i {
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     transition: .5s ease;
     backface-visibility: hidden; /*taken from w3 schools*/
 }
 
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
+.hoverEffects {
     top: 50%;
     left: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
     transform: translate(-50%, -50%); /*taken from w3 schools*/
     -ms-transform: translate(-50%, -50%); /*taken from w3 schools*/
     text-align: center;
-}
-
-.projectContainer:hover .computerPicture {
-    opacity: 0.3;
-}
-  
-.projectContainer:hover .middle {
-    opacity: 1;
 }
 
 .projectTitle {
@@ -146,8 +152,16 @@ main i {
     padding: 16px 32px;
 }
 
+.projectContainer:hover .computerPicture {
+    opacity: 0.3;
+}
+  
+.projectContainer:hover .hoverEffects {
+    opacity: 1;
+}
+
 /* -------------- */
-button {
+/* button {
     padding: 1.5rem;
     border-radius: 10px;
     border: none;
@@ -159,12 +173,12 @@ button:hover {
     text-decoration: none;
     color: rgb(50, 73, 28);
     background: blue;
-}
+} */
 
 
 /* SLIDESHOW ELEMENTS */
 
-#slideshow-container {
+/* #slideshow-container {
     position: relative;
     width: 100%;
     height: 100%;
@@ -184,7 +198,7 @@ button:hover {
 
 #slideshow-container .show {
     opacity: 1;
-}
+} */
 
 
 
@@ -198,3 +212,7 @@ button:hover {
     align-items: center;
     justify-content: center;
 } 
+
+.themeColor {
+    color: rgb(134, 91, 121);
+}

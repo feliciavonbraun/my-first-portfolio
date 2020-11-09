@@ -6,7 +6,6 @@ body {
 
 /* HEADER ELEMENTS*/
 header {
-    background: mediumorchid;
     top: 0;
     left: 0;
     right: 0;
@@ -37,7 +36,6 @@ h4 {
     align-items: flex-end;
 }
 
-
 /* MAIN ELEMENTS */
 main {
     height: 100vh;
@@ -53,21 +51,27 @@ main {
 
 h1 {
     padding: 1rem;
+    color: rgb(134, 91, 121);
 }
 
-.contactDetails > a:link {
+a:link {
     text-decoration: none;
     color: white;
 }
-   
-.contactDetails > a:visited {
+
+a:visited {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .contactDetails a:hover {
     text-decoration: none;
-    color: rgb(135, 220, 231);
+    color: rgb(134, 91, 121);
 }
 
 .contactDetails > :first-child {
@@ -79,7 +83,6 @@ h1 {
 }
 
 /* RESUABLE CLASSES */
-
 .flex {
     display: flex;
 }
