@@ -23,7 +23,7 @@ header {
 
 .pictureOfMe {
     position: absolute; 
-    visibility: visible; 
+    /* visibility: visible;  */
     bottom: 0;
     left: 25%; 
     width: 70%; 
@@ -72,9 +72,14 @@ a:hover {
 
 /* MAIN ELEMENTS*/
 main {
-    background: grey;
+    background: rgb(82, 82, 82);
 }
 
+.backgroundImage {
+    position: absolute;
+    width: 20%;
+    left: 40%;
+}
 
 
 /* NAVIGATION BAR ELEMENTS */
@@ -106,10 +111,15 @@ h4 {
 
 
 /* ABOUT SECTION */
-#about {
-    background: rgb(134, 91, 121);
-    padding: 1rem; /* DENNA BEHÖVS KANSKE INTE*/
+.aboutContainer {
+    background: rgb(134, 91, 121); 
+    text-align: center; 
 }
+
+.aboutImages {
+    width: 50%;
+}
+
 
 
 
