@@ -1,4 +1,4 @@
-@media (max-width: 400px) {
+@media (max-width: 425px) {
 
     h1 {
         font-size: 2.3rem;
@@ -8,7 +8,11 @@
         font-size: 1.5rem;
     }
 
-    .projectContainer {
-        
+    .contactDetails {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
     }
+ 
 }

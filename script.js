@@ -2,8 +2,6 @@
 const burgerNav = document.getElementsByClassName('burgerNav')[0];
 const menuIcon1 = document.getElementById('menu1');
 
-// burger nav ska ökas inte header 
-
 menuIcon1.onclick = function() {
     if (burgerNav.style.height == '100%') {
         burgerNav.style.height = null;

@@ -79,8 +79,37 @@ main {
     position: absolute;
     width: 20%;
     left: 40%;
+   
 }
 
+.relative {
+    background-image: url("images/gangemadl.png");
+    background: yellow;
+}
+.overlay-headers {
+    background-image: url("/background.png");
+    background: violet;
+}
+
+h6 {
+    background-image: url("/images/gangemadl.png");
+}
+
+/* .relative {
+    position: relative;
+    background-image: url("/images/gangemadl.png") no-repeat;
+    background: salmon;
+}
+
+.overlay-headers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-image: url("/images/gangemadl.png") no-repeat;
+    text-align: center;
+} */
 
 /* NAVIGATION BAR ELEMENTS */
 .burgerNav {
@@ -210,6 +239,10 @@ button:hover {
     opacity: 1;
 } */
 
+
+footer > img{
+    height: 2rem;
+}
 
 
 /* REUSABLE CLASSES */ 

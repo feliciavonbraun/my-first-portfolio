@@ -15,7 +15,6 @@ header {
     overflow: hidden;
 }
 
-/* Gör att musen blir en pekare på menyn */
 header i {
     cursor: pointer;
 }
@@ -36,6 +35,8 @@ h4 {
     align-items: flex-end;
 }
 
+
+
 /* MAIN ELEMENTS */
 main {
     height: 100vh;
@@ -44,14 +45,11 @@ main {
     justify-content: center;
     align-items: center;
 }
-/* .contactDetails {
-    line-height: 45px;
-    row-gap: 10rem; FUNKAR EJ
-} */
 
 h1 {
     padding: 1rem;
     color: rgb(134, 91, 121);
+    text-align: center;
 }
 
 a:link {
