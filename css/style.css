@@ -38,18 +38,23 @@ header {
 
 h1 {
     color: rgb(134, 91, 121);
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: 100%;
     margin: 5rem 0 0 0;
     flex-direction: column;
     /* border-spacing: 0; */
 }
 
-
-.myTitel {
+.myTitle {
     color: rgb(134, 91, 121);
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
     margin: 0;
     line-height: 0;
+}
+
+h3 {
+    font-size: x-large;
+    margin: 5%;
 }
 
 a:link {
