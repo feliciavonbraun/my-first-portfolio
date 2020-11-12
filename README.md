@@ -2,4 +2,4 @@
 
 My personal portfolio with all my projects. 
 
-Find my portfolio [here](https://feliciavonbraun.github.io/MyPortfolio/).
+Find my portfolio [here](https://feliciavonbraun.github.io/).
