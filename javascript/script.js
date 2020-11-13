@@ -1,4 +1,4 @@
-//Burger menu1 (on homepage WORKING)
+//Burger menu1 (on homepage)
 const burgerNav = document.getElementsByClassName('burgerNav')[0];
 const menuIcon1 = document.getElementById('menu1');
 

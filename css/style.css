@@ -176,20 +176,6 @@ h4 {
     opacity: 1;
 }
 
-/* -------------- */
-/* button {
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-    background: blueviolet;
-}
-
-button:hover {
-    text-decoration: none;
-    color: rgb(50, 73, 28);
-    background: blue;
-} */
 
 
 footer > img{
@@ -207,7 +193,3 @@ footer > img{
     align-items: center;
     justify-content: center;
 } 
-
-.themeColor {
-    color: rgb(134, 91, 121);
-}

@@ -1,4 +1,4 @@
-// Burger menu2 (on contact page) WORKING
+// Burger menu2 (on contact page)
 const header = document.querySelector('header');
 const menuIcon2 = document.getElementById('menu2');
 
