@@ -57,11 +57,7 @@ h3 {
     margin: 5%;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
-}
-a:visited {
+a:link, a:visited {
     text-decoration: none;
     color: white;
 }
@@ -90,7 +86,7 @@ main {
 
 
 
-/* NAVIGATION BAR ELEMENTS */
+/* STICKY NAV BAR ELEMENTS */
 .burgerNav {
     height: 4rem;
     padding-right: 1rem;
@@ -128,6 +124,9 @@ h4 {
     width: 50%;
 }
 
+.mobileAbout {
+    display: none;
+}
 
 
 
@@ -190,31 +189,6 @@ button:hover {
     text-decoration: none;
     color: rgb(50, 73, 28);
     background: blue;
-} */
-
-
-/* SLIDESHOW ELEMENTS */
-
-/* #slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#slideshow-container > img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s;
-    object-fit: cover;
-    object-position: center;
-}
-
-#slideshow-container .show {
-    opacity: 1;
 } */
 
 

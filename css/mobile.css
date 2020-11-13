@@ -19,4 +19,11 @@
         text-align: center;
     }
  
+    .mobileAbout {
+        display: block;
+    }
+    
+    .aboutSlideshow {
+        display: none;
+    }
 }

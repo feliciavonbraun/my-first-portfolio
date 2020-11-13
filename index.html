@@ -6,7 +6,8 @@
     <title> Felicias Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <script defer src="script.js"></script>
+    <script defer src="javascript/script.js"></script>
+    <script defer src="javascript/slideshow.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.png">
@@ -47,20 +48,51 @@
             </div>
         </nav>
 
-        <!-- ABOUT ELEMENTS -->
-        <div id="about">
-            <div class="relative center">
-                <img src="background.png" alt="background dots" style="width: 25%;">
-                <h2 class="center overlay-headers"> About</h2>
-            </div>
+        <!-- ABOUT HEADER -->
+        <div id="about" class="relative center">
+            <img src="background.png" alt="background dots" style="width: 25%;">
+            <h2 class="center overlay-headers"> About</h2>
+        </div>
 
+        <!-- ABOUT ELEMENTS DESKTOP -->
+        <div class="aboutSlideshow">
+            <div class="center aboutSlides fade">
+                <img src="images/malta.jpeg" style="width:50%">
+                <div class="center text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur minus iure modi quam corrupti earum autem, ad aspernatur fugit. Asperiores quidem, necessitatibus at eum recusandae quasi sunt natus velit!
+                </div>
+            </div>
+            <div class="center aboutSlides fade">
+                <div class="center text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem accusantium, atque, in illo nobis ipsum nihil molestiae mollitia recusandae nemo et doloremque ab vel, ipsa eos incidunt quaerat ea. Ipsum.
+                </div>
+                <img src="images/traveling.jpeg" style="width: 50%">
+            </div>
+            <div class="center aboutSlides fade ">
+                <img src="images/traveling.jpeg" style="width:50%">
+                <div class="center text">
+                    huhuuhuhuhuh
+                </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+
+        <!-- ABOUT ELEMENTS MOBILE -->
+        <div class="mobileAbout">
             <div class="aboutContainer flex">
                 <img class="aboutImages" src="images/malta.jpeg" alt="">
                 <p class="center">
                     I have been living on Malta for 1.5 years. Witch was a great experienced and I learned so much.
                 </p>
             </div>
-
             <div class="aboutContainer flex">
                 <p class="center">
                     sounds like a chilche to say I love travling but so be it. Together with my backpack and friends I have 
@@ -68,7 +100,6 @@
                 </p>
                 <img class="aboutImages" src="images/traveling.jpeg" alt="">
             </div>
-
             <div class="aboutContainer flex">
                 <img class="aboutImages" src="images/traveling.jpeg" alt="">
                 <p class="center">
@@ -84,28 +115,25 @@
                 <img src="background.png" alt="background dots" style="width: 25%;">
                 <h2 id="about" class="center overlay-headers">Projects</h2>
             </div>
-
+            
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/swedbankl.png" alt="">
                 <div class="hoverEffects">
                     <a href="https://feliciavonbraun.github.io/swedbank-homepage/"><p class="projectTitle">Swedbank</p></a>
                 </div>
             </div>
-
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/gangemadl.png" alt="">
                 <div class="hoverEffects">
                     <a href="https://feliciavonbraun.github.io/Gangemad/index.html"><p class="projectTitle">Gångemad</p></a>
                 </div>
             </div>
-            
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/jsGame.png" alt="">
                 <div class="hoverEffects">
                     <a href="https://feliciavonbraun.github.io/javascript-game/"><p class="projectTitle">JavaScript Game</p></a>
                 </div>
             </div>
-
             <div class="projectContainer">
                 <img class="computerPicture" src="./images/jsGame.png" alt="">
                 <div class="hoverEffects">
@@ -113,12 +141,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div id="slideshow-container">
-            <img class="show" src="images/malta.jpeg" alt="">
-            <img src="images/traveling.jpeg" alt="">
-            <img src="images/traveling.jpeg" alt="">
-        </div> -->
 
     </main>
 
