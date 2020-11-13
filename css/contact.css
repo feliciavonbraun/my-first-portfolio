@@ -35,6 +35,11 @@ h4 {
     align-items: flex-end;
 }
 
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 
 
 /* MAIN ELEMENTS */
@@ -52,19 +57,9 @@ h1 {
     text-align: center;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
     color: white;
-}
-
-a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-    color: black;
 }
 
 .contactDetails a:hover {
@@ -73,50 +68,14 @@ a:hover {
 }
 
 .contactDetails > :first-child {
-    padding: 0 5rem;
+    padding: 0 3rem 0 0;
 }
 
 .contactDetails > :nth-child(3) {
-    padding: 0 5rem;
+    padding: 0 0 0 3rem;
 }
 
 /* RESUABLE CLASSES */
 .flex {
     display: flex;
 }
-
-
-
-/* CSS to form I will be using once I know how it works */
-/* input {
-    background: rgb(238, 230, 230);
-    width: 15rem;
-    height: 1.8rem;
-    border-radius: 1000px;
-    border: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    flex: .7;
-    align-items: center;
-    padding: 0 2rem 2rem 2rem;
-}
-
-.form-inputs {
-    height: 2rem;
-    width: 13rem;
-    border-radius: 10px;
-    border: none;
-}
-
-.message {
-    height: 8rem;
-}
-
-button {
-    color: white;
-    background: rgb(50, 73, 28);
-    font-size: 1rem;
-} */

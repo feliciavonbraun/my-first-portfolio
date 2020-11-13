@@ -38,11 +38,9 @@ header {
 
 h1 {
     color: rgb(134, 91, 121);
-    /* font-size: 5rem; */
-    font-size: 100%;
+    font-size: 5rem;
     margin: 5rem 0 0 0;
     flex-direction: column;
-    /* border-spacing: 0; */
 }
 
 .myTitle {
@@ -72,8 +70,9 @@ a:hover {
 
 
 /* FOOTER ELEMENTS */
-footer > img{
+footer > a{
     height: 2rem;
+    padding: 0.5rem;
 }
 
 
