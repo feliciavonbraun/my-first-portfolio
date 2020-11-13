@@ -2,16 +2,12 @@
 main {
     background: rgb(82, 82, 82);
 }
-
 .relative {
     position: relative;
 }
-
 .overlay-headers {
     position: absolute;
 }
-
-
 
 /* STICKY NAV BAR ELEMENTS */
 .burgerNav {
@@ -58,11 +54,9 @@ h4 {
 /* SLIDESHOW ELEMENTS */
 .aboutSlides {
     background: rgb(134, 91, 121);;
-    /* height: 100%; */
 }
   
 .text {
-    background: chocolate;
     height: 100%;
     width: 100%;
     text-align: justify;
@@ -70,12 +64,12 @@ h4 {
 }
   
 .aboutSlideshow {
-    /* padding: 3rem;  */
+    padding: 3rem; 
     position: relative;
 }
   
 /* Next & previous buttons. 
-Most CSS copied from W3 schools. 
+Much CSS copied from W3 schools. 
 I do understand the code but I copied because I almost wanted it the same way*/
 .prev, .next {
     cursor: pointer;
@@ -91,7 +85,7 @@ I do understand the code but I copied because I almost wanted it the same way*/
   
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: 3rem;
     border-radius: 3px 0 0 3px;
 }
   
